@@ -3,7 +3,7 @@ A python program using selenium to check who is not following you back on Instag
 
 ## Dependencies
 
-This script requires python3 and selenium installed.Download any version of python3 from <a href="https://www.python.org/downloads/">here.</a>For selenium just run the following code:
+This script requires python3 and selenium installed.Download any version of python3 from <a href="https://www.python.org/downloads/">here.</a>For selenium with python installed just run the following code:
 
 ```
 pip3 install selenium
