@@ -1,22 +1,28 @@
 from selenium import webdriver
 from time import sleep
 import random
-driver=webdriver.Chrome()#Enter your chromedriver path here
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+driver=webdriver.Chrome(r"")#put the path of your chrome driver in the double quotes
 driver.get('https://instagram.com/')
-sleep(5)
+WebDriverWait(driver,30).until(EC.presence_of_element_located(
+            (By.CSS_SELECTOR, '.f0n8F ')))
 username_type = driver.find_element_by_xpath("//input[@name=\"username\"]")
-username_type.send_keys("")#Enter your username in the double quotes.
+username_type.send_keys("")#Enter your username in double quotes
 password_type = driver.find_element_by_xpath("//input[@name=\"password\"]")
-password_type.send_keys("")#Enter your password in the double quotes.
+password_type.send_keys("")#Enter your password in double quotes
 log_in = driver.find_element_by_xpath("//button[@type='submit']")
 log_in.click()
-sleep(10)
+WebDriverWait(driver,30).until(EC.presence_of_element_located(
+            (By.CSS_SELECTOR, '._6q-tv')))
 dp=driver.find_element_by_xpath("//img[@class='_6q-tv']")
 dp.click()
 sleep(2)
 profile=driver.find_element_by_class_name('_7UhW9')
 profile.click()
-sleep(5)
+WebDriverWait(driver,30).until(EC.presence_of_element_located(
+            (By.CSS_SELECTOR, '._81NM2')))
 follow=driver.find_element_by_xpath("//a[@class=' _81NM2']")
 follow.click()
 sleep(2)
