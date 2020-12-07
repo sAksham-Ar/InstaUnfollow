@@ -14,15 +14,7 @@ pip3 install selenium
 Firstly,download this script.
 This script will only work if you have chrome.Download chromedriver from <a href="https://chromedriver.chromium.org/downloads">here.</a>
 
-<i>Note:To use it with firefox change
- 
- ```driver=webdriver.Chrome()```
- 
- in line 4 to
- 
- ```driver=webdriver.Firefox()```
- 
- Then you should download the geckodriver from <a href="https://github.com/mozilla/geckodriver/releases">here.</a>
+<i>Note:To use it with firefox change ```driver=webdriver.Chrome()``` in line 4 to  ```driver=webdriver.Firefox()``` Then you should download the geckodriver from <a href="https://github.com/mozilla/geckodriver/releases">here.</a>
  </i>
  
  After the download you should put the path of the driver in the file like this:
