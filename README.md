@@ -1,9 +1,10 @@
 # InstaUnfollow
-A python program using selenium to check who is not following you back on Instagram.
-##Dependencies
+A python program using selenium to check who is not following you back on Instagram.<br>
+<h2>Dependencies</h2>
 This script requires python3 and selenium installed.Download any version of python3 from <a href="https://www.python.org/downloads/">here.</a>For selenium just run the following code:<br>
 ```pip3 install selenium```
-##Setup
+<br>
+<h2>Setup</h2>
 <br>
 Firstly,download this script.
 This script will only work if you have chrome.Download chromedriver from <a href="https://chromedriver.chromium.org/downloads">here.</a>
@@ -16,6 +17,6 @@ This script will only work if you have chrome.Download chromedriver from <a href
  <br>
 After that put your username name and password in the file.
 <br>
-##Run
+<h2>Run</h2>
 Just run the script using python like:<br>
 ```python3 unfollow.py```
