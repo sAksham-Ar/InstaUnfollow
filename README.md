@@ -26,5 +26,5 @@ After that put your username name and password in the a file key.txt in the fold
 Just run the script using python in powershell or in terminal like:
 
 ```
-python3 unfollow.py
+python3 unfollow.py username password
 ```
